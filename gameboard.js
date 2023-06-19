@@ -39,7 +39,7 @@ const gameBoard = () => {
 
   // Create Knight and place him at position 0,0
   const cellNodes = chessTable.querySelectorAll("td");
-  cellNodes.array.forEach((cellNode) => {
+  cellNodes.forEach((cellNode) => {
     if (defaultStartLocation.toString() === cellNode.dataset.coordArray) {
       let knightImg = document.createElement("img");
       knightImg.src = "./assets/knight.svg"; // find knight.svg logo
