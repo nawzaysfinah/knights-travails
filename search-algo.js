@@ -78,8 +78,7 @@ const knightsTravails = (start, finish) => {
     const prevSquare = path[0].getPredecessor();
     path.unshift(prevSquare);
   }
-  console.log(`the shortest path was ${path.length - 1} moves!`);
-  console.log("the moves were:");
+  console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
   path.forEach((square) => console.log(square.name()));
 };
 
